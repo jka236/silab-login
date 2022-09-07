@@ -2,7 +2,9 @@
 
 export FLASK_APP=project
 export FLASK_DEBUG=1
+
 flask db init || echo "DB init skip"
+echo "DB init"
 
 flask db migrate
 flask db upgrade
